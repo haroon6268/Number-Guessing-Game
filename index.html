@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number!</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+    </style>
+</head>
+<body class="bg-black md:mx-[20%] 2xl:mx-[25%]">
+    <nav class="justify-between mx-8 flex mt-5">
+        <button class="bg-white text-black font-vt text-5xl font-bold py-2 px-4 againBtn">
+            Again!
+        </button>
+        <h1 class="text-4xl text-white font-vt">
+            (Between 1 and 20)
+        </h1>
+    </nav>
+    <h1 class="font-vt text-white text-9xl  text-center font-bold">Guess The Number!</h1>
+
+    <div class="mt-32 flex items-center justify-center">
+        <hr class="bg-white border-8 relative w-full">
+        <div class="h-[150px] w-[150px] bg-white absolute flex justify-center items-center">
+            <h1 class="text-9xl text-black font-vt">?</h1>
+        </div>
+    </div>
+    
+    <div class="flex mt-32 justify-between xl:mx-24">
+        <div class="flex flex-col justify-center items-center space-y-12">
+            <input type="number" class="bg-black border-solid border-white border-4 text-7xl text-white text-center w-[225px] py-2 font-vt inputNumber">
+            <button class="bg-white text-black text-5xl px-4 py-2.5 font-vt checkBtn">
+                Check !
+            </button>
+        </div>
+        <div class="flex flex-col">
+            <p class="text-4xl text-white font-vt text-right hint">Start guessing...</p>
+            <p class="text-4xl text-white font-vt text-right mt-16 score">Score: 20</p>
+            <p class="text-4xl text-white font-vt text-right highScore">Highscore: </p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
